@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#header{
+            background:#6bacc8;
+            border-bottom: 10px solid #68a4be;
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+            margin-bottom: 0px;
+        }
+        
+        nav ul{
+
+            list-style: none;
+            display: flex;
+            padding-right: 40px;
+        }
+
+        nav ul li a{
+            display: block;
+            padding: 15px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 30px;
+            font-weight: bold;
+         }
+
+         nav ul li input{
+        margin-top: 16px;
+         }
+
+         #nav ul li a:link,
+         #nav ul li a:visited {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+         }
+         #nav ul li a:hover {
+            color: white;
+            background: #837972;
+
+         }
+         #nav ul li a:active {
+           background: #524f4d;
+         }
+
+         #hero{
+         background-image: url("./images/smbg.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 1000px;
+         display: flex;
+        }
+         
+        .herotext{
+            font-weight: bold;
+            align-items: center;
+            margin-left: 37%;
+            font-size: 150px;
+            color: white;
+            font-style: italic;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            display: flex;
+    
+        }
+
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-left:  300px;
+            margin-right: 300px;
+            font-size:20px ;
+            line-height: 30px;
+            text-align: justify;
+
+        }
+
+
+        section{
+            margin-top: 60px;
+        }
+        #central{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            padding-top: 70px;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        #main{
+            width: 600px;
+        }
+        
+        #aside{
+            margin-top: 0px;
+    
+        }
+    
+
+           #aside h3:nth-of-type(1) {
+            margin-top: 10%;
+            margin-bottom: 3%;
+        }
+
+        #aside h3:nth-of-type(2) {
+            margin-top: 60%;
+            margin-bottom: 10%;
+        }
+
+          #aside h3:nth-of-type(3) {
+            margin-top: 80%;
+            margin-bottom: 10%;
+        }
+
+        h2{
+            padding-top: 20px;
+        }
+
+    
+
+
+       footer{
+            margin-top: 150px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        background-color: #6bacc8;
+        color: white;
+        display: flex;
+        height: 280px;
+    
+
+     }
+
+    #containerf2{
+        padding-top: 10px;
+        padding-left: 80px;
+        font-size: 20px;
+        line-height: 25px;
+        
+    }
+    #containerf3{
+        
+        padding-top: 10px;
+        padding-left: 270px;
+        font-size: 20px;
+        line-height: 25px;  
+     }
+
+    #containerf4{
+   
+        padding-top: 10px;
+        padding-left:200px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    
+    #left{
+        text-transform: capitalize;
+        font-size: 25px; 
+        
+     }
+     #right{
+        text-transform: capitalize;
+        font-size: 25px; 
+     }
+
+    ul{
+        list-style-type: none;
+    }
+    input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #c9c9c9;
+    margin: 10px 0px 10px 0px;
+    }
+
+    input[type="text"]:hover{
+    border: solid 2px #969696;
+    }
+
+    input[type="text"]:focus{
+    border: solid 2px #262626;
+    }
+
+    input[type="text"] {
+    background-color: rgba(201, 201, 201, 0.75);
+    }
+
+
+    @media screen and (max-width: 767px){
+         #header{
+            display: flex;
+            height: 300px;
+        }
+        
+        nav ul{
+            flex-direction: column;
+        }
+
+          nav ul li:nth-of-type(4){
+        margin-top: 16px;
+        width: 40%;
+         }
+
+          #hero{
+         background-image: url("smbg.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 900px;
+         display: flex;
+        }
+         
+        .herotext{
+            margin-left:20%;
+            padding-top: 0px;
+            padding-left: 0px;
+            font-size: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #wrapper{
+            margin-left:  0px;
+            margin-right: 0px;
+            font-size:20px ;
+            width: 95%;
+
+        }
+
+        
+        section{
+            margin-top: 60px;
+        }
+
+        #central{
+            display: flex;
+            flex-direction: column;
+            padding-top: 70px;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        #main{
+            width: 100%;
+        }
+       
+        
+            footer{
+        margin-top: 100px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    
+
+    }
+
+    #containerf1{
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    #flogo{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #containerf2{
+        padding-top: 10px;
+        padding-left: 0px;
+        font-size: 20px;
+        line-height: 25px;
+        
+    }
+    #containerf3{
+        
+        padding-top: 10px;
+        padding-left: 0px;
+        font-size: 20px;
+        line-height: 25px;  
+     }
+
+    #containerf4{
+        width: 80%;
+        padding-top: 10px;
+        padding-left:0px;
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+     }
+    </style>
+</head>
+<body>
+
+
+    
+    <header id="header">
+        <div id="logo">
+            <img src="./images/logo.png" alt="logo" width="160px">
+        </div>
+
+         <nav id="nav">
+            <ul>
+               <li><a href="homepage.html">Teneriffa</a></li>
+               <li> <a href="Atrakcije.html"> Atrakcije</a></li>
+                <li><a href="Plaze.html">Plaže</a></li> 
+                <li> <input type="text" placeholder="Pretraži.."></li>
+            </ul>
+         </nav>
+    </header>
+
+
+<article id="hero">
+
+    <div class="herotext">
+        <p>SMJEŠTAJ</p>
+    </div>
+
+</article>
+
+    <div id="wrapper">
+        <section>
+            S palmama koje se njišu, ZApanjujućim plažama i blještavim tirkiznim morem - jasno je zašto su Tenerife tako tražena destinacija za odmor. 
+
+            Dodajte ukusnu hranu, epsko planinarenje i divlji noćni život i ima sve što možete poželjeti od ljetovališta. Bilo da se želite zabavljati od sumraka do zore, planinariti  ili se izležavati na plaži, Tenerife ima za svakoga ponešto.
+
+            Mnogi znaju za prekrasne plaže koje otok nudi. Međutim, ako se možete odmaknuti od pijeska, možete krenuti u unutrašnjost da upijete ljepotu planina. Važno je odlučiti gdje ćete odsjesti na Tenerifima jer ćete htjeti odabrati područje s aktivnostima koje vam najviše odgovaraju. Tenerife je velik otok – zapravo najveći na Kanarskim otocima – i odluka o tome gdje odsjesti nije laka.
+
+     </section>
+
+     <div id="central">
+                <div class="column1">
+                    <h2>ODMOR S OBITELJI</h2>
+                <p>
+                   <h3>Costa Adeje</h3> 
+                    Nudeći raznoliku ponudu smještaja za sve budžete i sklonosti, <strong>Costa Adeje</strong> osigurava nezaboravan boravak za svakog putnika. Njegova neposredna blizina zračne luke Tenerife South, udaljene otprilike 20 km, pridonosi njegovoj pogodnosti, što je čini idealnim mjestom za vaš boravak na Tenerifima. Unatoč brojnim hotelima, Costa Adeje je pregledna; mjesto se nalazi u relativno širokoj, ravnoj dolini i lako ju je istražiti pješice. Relativno novi grad nema povijesnih zgrada, iako su neki hoteli temeljeni na starim dvorcima i samostanima. U Adejeu možete vidjeti mnogo lijepih plaža, poput plaže Duque. To je bijela arena
+                    plaža smještena uz neke od najekskluzivnijih hotela na otoku. Osim toga, u blizini se nalaze brojni restorana i trgovina. Do njega možete lako doći pješice izravno iz našeg hostela Duque Nest. Raspolaže brojnim sadržajima, poput tuševa, kupaonica, svlačionica te usluge najma ležaljki i suncobrana.
+                    Costa Adeje: populacijska je cjelina općine Adeje, na otoku. Predstavlja jednu od tri glavne turističke destinacije na otoku Tenerife, uz Playa de las Americas, <strong>Los Cristianos,Guia de Isora Puerto de la Cruz</strong>.To je prekrasno područje samo po sebi, uz hotele koji se nalaze na Playa del Duque točno ispred prekrasnog parka iz kojeg je užitak prošetati do plaže ili drugih odredišta.
+                </p>
+            <br>
+
+                 <h2> ROMANTIčNI ODMOR ZA PAROVE</h2>
+                <p>
+                    <h3>Sjeverna obala i Alcala</h3>
+                    Sjeverna obala je mjesto gdje ćete pronaći najkarakterističnija sela i gradove, ali, nažalost, ne i najbolje plaže. Ako ste za tradicionalnijim područjem, s više domaćih i manje turista, s mogućnošću pješačenja, tada je Sjeverna obala mjesto za rezervirati vaš smještaj. To je savršeno mjesto za parove koji traže osamu i romantično mjesto gdje će provesti nekoliko dana
+                    Ljeti ima tendenciju da bude malo hladnije od juga što ga čini idealnim ako vam se ne sviđa 30 stupnjeva. Garachico je lijepo mjesto za parove ili čak za medeni mjesec, u međuvremenu je Puerto de la Cruz bio prva turistička destinacija na otoku, mnogo bliže Aeropuerto de Tenerife Norte (na sjeveru). Postoji nešto jednostavno očaravajuće u otočkom životu za parove. Od romantičnih šetnji plažom do večera uz zalazak sunca na vodi, nije ni čudo što vi i vaš dragi planirate odmor na otoku. 
+                    <strong>Alcala</strong> je nekadašnje ribarsko mjesto koje je zadržalo svoj karakter. Ovo je mjesto idealno za parove na Tenerifima koji vole manje turistička područja. U blizini Alcale nalaze se 3 plaže. Jedna, Playa de Alcala, nalazi se u samom središtu sela, nekoliko koraka od gradskog trga i ribarske luke gdje možete uživati ​​u svježe ulovljenoj ribi i plodovima mora. Unatoč svojoj maloj veličini - samo 30 metara duga - plaža je vrlo ugodna i, što je još važnije, nepoznata većini turista. Plaža se nalazi u prirodnoj uvali, okružena šiljastim stijenama, idealnom za sunčanje na crnom vulkanskom pijesku. U blizini je još jedna plaža, Playa Méndez. Nešto dalje, desetak minuta hoda uz veličanstvenu modernu šetnicu, nalazi se treća plaža, Playa la Jaquita. U Alcali se parovi mogu sunčati, plivati, roniti, trčati uz ocean i baviti se vodenim sportovima. <strong>La Orotava</strong>, sa svojim romantičnim ulicama i povijesnom arhitekturom, mami i parove i ljubitelje povijesti.
+                    Od povijesnih znamenitosti kao što su Iglesia de Nuestra Señora de la Concepción i Casa de los Balcones do romantičnog okruženja Jardines Victoria, La Orotava je praznik za oči i dušu.
+                    Povijesne palače grada i očuvana arhitektura kanarskog stila pružaju slikovitu pozadinu za romantični bijeg.
+                 </p>
+
+                 <h2>ODMOR UZ ZABAVU I NOćNI žIVOT</h2>
+                <p>
+                    <h3>Las Americas i Santa Cruz de Teneriffa</h3>
+                Tenerife - idealno za mlade ljude da uživaju u noćnom životu. Brojni klubovi, barovi i diskoteke na Tenerifima pozivaju noćne ptice da se zabave na zabavama. Plešući uz vruće ritmove, možete i vi zaboraviti na svakodnevicu! Osobito na odmoru trebali biste uživati ​​u ovom štihu pod južnim zvjezdanim nebom. S obzirom na međunarodnu glazbenu ponudu na Kanarskim otocima - od jazza preko popa i rocka do salse - zasigurno ćete uskoro biti u najboljem party raspoloženju.
+                <strong>Playa de las Americas</strong> najbolje je mjesto za boravak na Tenerifima zbog užurbanog noćnog života, posebno privlačnog mladima i parovima. To je najprometniji dio Tenerifa, s puno barova, restorana i klubova, i toliko mnogo drugih stvari koje mogu učiniti za mlade.
+                Budući da postoji toliko mnogo opcija, bit će vam teško napraviti izbor! Samo se uputite u glavnu pješačku ulicu kojom se nižu barovi i klubovi i počnite obilaziti pubove. Nastavite ulicom i završite u epskom klubu kako biste završili sjajnu noć zabave. Ovo je sjajno mjesto za boravak na Tenerifima bez automobila, jer ćete moći prošetati do glavnih točaka interesa. 
+                Osim noćnog života, Playa de las Americas nudi i vrlo lijepe plaže. Nakon duge večeri zabave, možete odabrati jednu od ovih prekrasnih plaža za ponovno kupanje u kristalno plavom moru prije nego što sve ponovite sljedeće noći!
+                <strong>Santa Cruz de Tenerife</strong>: glavni grad otoka jedna je od najboljih opcija za noćni izlazak na sjeveru Tenerifa. Konkretno, područje oko pješačke ulice Calle de La Noria — koja se trenutno zove Calle Antonio Domínguez Alfonso — mjesto je gdje ćete pronaći najviše akcije. Ovdje se isti barovi i restorani koji poslužuju tapase tijekom dana pretvaraju u klubove kada padne noć. Najpoznatiji su Mojos y Mojitos i Los Reunidos Tapas y Copas, dva mjesta koja su savršena za prijelazno razdoblje između dana i noći.
+                <strong>La Laguna</strong>: Grad San Cristóbal de La Laguna—popularno poznat kao La Laguna—bio je u vrijeme kastiljskog osvajanja prva prijestolnica otoka. Iako je gubitak statusa glavnog grada značio da više nije središte političke i ekonomske moći, ono što La Laguna ovih dana ima za ponuditi je zdrav, uspješan noćni život. Sveučilište, prvo osnovano na Kanarskim otocima, uvelike je pridonijelo tome jer grad ima studentsku atmosferu koja je jedinstvena na Tenerifima.
+            </p>
+        </div>
+                
+            <div class="column2">
+                 <sidebar id="aside">
+            
+                <h3>Najbolji hoteli u Costa Adeje</h3>
+                <br>
+                    <p> <strong>Iberostar Selection Hotel</strong></p>
+                    
+
+                <p><strong>Bahia del Duque</strong> </p>
+                 
+
+                 <h3>Najbolji hoteli za parove</h3>
+              
+                 <p><strong>Hotel Alhambra</strong> </p>
+              
+
+                 <p><strong>Be live experience</strong> </p>
+                
+                
+                 <h3>Najbolji hoteli za zabavu</h3>
+
+                 <p><strong>Hotel La siesta</strong></p>
+               
+                 <p><strong>Spring hotel Vulcano</strong> </p>
+                
+
+                 <p><strong>Gran Oasis Resort</strong> </p>
+               
+                
+                <p><strong>Melia Jardines</strong> </p>
+                 
+              
+
+                 <p><strong>Dreams Jardin Tropical</strong> </p>
+                 
+                
+                 <p id="pl"><strong>Hotel rural la Orotava</strong> </p>
+                 
+
+                 <p id="pl1"><strong>Red level Alacala</strong> </p>
+                 
+
+                 
+                 <p id="pl3"><strong>Silken Atlantida</strong> </p>
+                
+
+                 
+                 <p><strong>Hotel Colon Rambla</strong> </p>
+                
+
+            </sidebar>
+               
+            </div>
+              
+           
+            
+           
+            
+
+    </div>
+
+            
+     </div>
+
+<footer>
+    
+    <div id="containerf2">
+        <ul>
+            <li id="left">Informacije</li> <br>
+            <li>Teneriffa</li> 
+            <li>Plaže</li>
+            <li>Atrakcije</li>
+        </ul>
+    </div>
+
+    <div id="containerf3">
+        <ul>
+            <li id="right">Kontakt</li> <br>
+            <li>Nepoznata ulica 519B <br>756422 Nepoznat</li>
+            <li>E-mail: teneriffaiskustvo@gmail.com</li>
+            <li>Telefon: 0543227665419</li>
+        </ul>
+    </div>
+
+        <div id="containerf4">	
+            <form>
+            <input type="text" name="Ime" id="Ime" placeholder="Ime">
+            <input type="text" name="email" id="email" placeholder="E-MAIL">
+            <input disabled type="text" name="Predmet" id="Predmet" placeholder="Predmet">
+            <br><input type="Pošalji" name="Pošalji" id="Pošalji" value="Pošalji">
+            </form>
+        </div>
+
+
+</footer>
+    
+</body>
+</html>

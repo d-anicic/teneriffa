@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        #header{
+            background:#f3b98a;
+            border-bottom: 10px solid #f5903d;
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+            margin-bottom: 0px;
+        }
+        
+        nav ul{
+
+            list-style: none;
+            display: flex;
+            padding-right: 40px;
+        }
+
+        nav ul li a{
+            display: block;
+            padding: 15px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 30px;
+            font-weight: bold;
+         }
+
+         nav ul li input{
+        margin-top: 16px;
+         }
+
+         #nav ul li a:link,
+         #nav ul li a:visited {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+         }
+         #nav ul li a:hover {
+            color: white;
+            background: #837972;
+
+         }
+         #nav ul li a:active {
+           background: #524f4d;
+         }
+
+         #hero{
+         background-image: url("./images/mbg.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 850px;
+         display: flex;
+        }
+
+        
+       
+         
+        .herotext{
+            font-weight: bold;
+            align-items: center;
+            padding-top: 250px;
+            padding-left: 600px;
+            font-size: 150px;
+            line-height: 20px;
+            color: white;
+            font-style: italic;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        }
+
+        #p2{
+            font-size: 100px;
+    
+        }
+        #wrapper{
+            margin-left:  300px;
+             margin-right: 300px;
+            font-size:20px ;
+            line-height: 30px;
+
+        }
+
+        h1{
+        margin-top: 70px;
+        margin-left: 530px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-style: bold;
+         }
+    
+
+        #container1{
+        display: flex;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 30px;
+
+        }
+
+        .image1{
+        padding-left: 20px;
+        position: relative;
+        width: 600px;
+        }
+        
+        
+        h2{
+        margin-top: 70px;
+        margin-left: 400px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-style: bold;
+         }
+    
+
+        #container2{
+        display: flex;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 30px;
+
+        }
+
+        .image2{
+        padding-right: 20px;
+        position: relative;
+        width: 600px;
+        }
+
+        #container3{
+        display: flex;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 30px;
+
+        }
+
+        .image3{
+        padding-left: 20px;
+        position: relative;
+        height: 600px;
+        }
+        
+        h3{
+        margin-top: 70px;
+        margin-left: 470px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-style: bold;
+         }
+    
+
+        #container4{
+        display: flex;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 30px;
+
+        }
+
+        .image4{
+        padding-right: 20px;
+        position: relative;
+        height: 400px;
+        }
+
+        footer{
+        margin-top: 150px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        background-color:#edbc94;
+        color: white;
+        display: flex;
+        height: 280px;
+    
+
+    }
+
+    #containerf2{
+        padding-top: 10px;
+        padding-left: 80px;
+        font-size: 20px;
+        line-height: 25px;
+        
+    }
+    #containerf3{
+        
+        padding-top: 10px;
+        padding-left: 270px;
+        font-size: 20px;
+        line-height: 25px;  
+     }
+
+    #containerf4{
+   
+        padding-top: 10px;
+        padding-left:200px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    
+    #left{
+        text-transform: capitalize;
+        font-size: 25px; 
+        
+     }
+     #right{
+        text-transform: capitalize;
+        font-size: 25px; 
+     }
+
+    ul{
+        list-style-type: none;
+    }
+    input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #c9c9c9;
+    margin: 10px 0px 10px 0px;
+    }
+
+    input[type="text"]:hover{
+    border: solid 2px #969696;
+    }
+
+    input[type="text"]:focus{
+    border: solid 2px #262626;
+    }
+
+    input[type="text"] {
+    background-color: rgba(201, 201, 201, 0.75);
+    }
+
+
+     @media screen and (max-width: 767px){
+         #header{
+            display: flex;
+            height: 300px;
+        }
+        
+        nav ul{
+            flex-direction: column;
+        }
+
+          nav ul li:nth-of-type(4){
+        margin-top: 16px;
+        width: 40%;
+        
+         }
+
+         #hero{
+         background-image: url("mbg.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 900px;
+         display: flex;
+        }
+         
+        .herotext{
+            align-self: center;
+            margin-left: 30%;
+            padding-top: 0px;
+            padding-left: 0px;
+            font-size: 50px;
+        }
+
+        #p2{
+            font-size: 40px;
+            width: 30%;
+            height: 200px;
+            line-height: 50px;
+    
+        }
+        #wrapper{
+            margin-left:  10px;
+            margin-right: 10px;
+             width: 95%;
+        }
+
+        h1{
+        margin-left: 40%;
+         }
+    
+
+        #container1{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 30px;
+        width: 90%;
+        }
+
+        .image1{
+        width: 100%;
+        padding-left: 0px;
+        position: relative;
+        }
+        
+        
+        h2{
+        margin-left: 30%;
+        width: 30%;
+         }
+    
+
+        #container2{
+        display: flex;
+        flex-direction: column;
+        }
+
+        .image2{
+        padding-right: 20px;
+        position: relative;
+        width: 100%;
+        }
+
+        #container3{
+        display: flex;
+        flex-direction: column;
+        }
+
+        .image3{
+        padding-left: 0px;
+        position: relative;
+        width: 100%;;
+        }
+        
+        h3{
+        margin-left: 30%;
+        width: 30%;
+         }
+    
+
+        #container4{
+        display: flex;
+        flex-direction: column;
+
+        }
+
+        .image4{
+        padding-right: 20px;
+        position: relative;
+        width: 100%;
+        }
+
+            footer{
+        margin-top: 100px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    
+
+    }
+
+    #containerf1{
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    #flogo{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #containerf2{
+        padding-top: 10px;
+        padding-left: 0px;
+        font-size: 20px;
+        line-height: 25px;
+        
+    }
+    #containerf3{
+        
+        padding-top: 10px;
+        padding-left: 0px;
+        font-size: 20px;
+        line-height: 25px;  
+     }
+
+    #containerf4{
+        width: 80%;
+        padding-top: 10px;
+        padding-left:0px;
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+}
+     
+
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+        <img src="./images/logo.png" alt="logo" width="160px">
+        </div>
+
+         <nav id="nav">
+            <ul>
+               <li><a href="Plaze.html">Plaže</a></li>
+               <li> <a href="Atrakcije.html"> Atrakcije</a></li>
+                <li><a href="smjestaj.html">Smještaj</a></li> 
+                <li> <input type="text" placeholder="Pretraži.."></li>
+            </ul>
+         </nav>
+    </header>
+
+
+<article id="hero">
+
+    <div class="herotext">
+        <p>TENERIFFA</p>
+        <p id="p2">
+            Otok vječne mladosti 
+        </p>
+    </div>
+</article>
+
+    <div id="wrapper">
+        <h1>KANARSKI OTOCI</h1>
+        <br>
+        <br>
+        <br>
+        
+            <div id="container1" > Zahvaljujući svom položaju uz obalu sjeverozapadne Afrike, plaže Kanarskih otoka privlače masovne turiste tijekom cijele godine. Ali ovaj arhipelag vulkanskih španjolskih otoka obiluje prirodnim čudima, od planine Teide (svjetske baštine) na Tenerifima do dina Maspalomas na Gran Canariji.
+                Osim sunca, pijeska i mora, Kanarski su otoci poznati po svojim surovim prirodnim krajolicima, povijesnom značaju i raznolikim kulturama. Gran Canaria i Tenerife najveći su Kanarski otoci, ali ljubitelji prirode trebali bi posjetiti La Palmu i promatrati prekrasan pogled s kultnog mosta Tilos. Bilo da želite pješačiti uz vulkan, opustiti se na plaži ili uživati ​​u lokalnim delicijama kao što je kanarski naborani krumpir, Kanarski otoci imaju nešto za vas.
+                
+                
+                <img src="./images/kanarski.png" class="image1">
+        
+        
+
+            </div>
+
+
+            <br>
+<br>
+<br>
+
+
+
+        <h2>Teneriffa-otok vječne mladosti</h2>
+
+<br>
+<br>
+<br>
+
+
+    <div id="container2"> <img src="./images/image.jpg" class="image2">
+            Nekadašnji naziv (Tenerife) je najveći i najnaseljeniji otok Kanarskog otočja. U njemu živi 42,9% ukupnog stanovništva arhipelaga. Na vulkanskom otoku živi oko 900.000 stanovnika. To Tenerife čini najnaseljenijim otokom u Španjolskoj. Zajedno s Gran Canariom, Tenerife je jedan od najposjećenijih otoka u kanarskom arhipelagu. Također je glavni otok zapadne regije Kanarskih otoka. Otok ima površinu od 2.034,38 četvornih kilometara (785.48 četvornih milja) i populacijom od 948.815 stanovnika od siječnja 2023. Također je najnaseljeniji otok Španjolske i Makaronezije. Otprilike pet milijuna turista posjeti Tenerife svake godine; to je najposjećeniji otok u arhipelagu. Jedno je od najvažnijih turističkih odredišta u Španjolskoj i svijetu, gdje se održava jedan od najvećih svjetskih karnevala - karneval Santa Cruz de Tenerife
+            Tenerife je otok 1000 doživljaja. Tisuću planova koji su mogući u bilo koje doba godine zahvaljujući blagoj klimi i ogromnom izboru aktivnosti koje nudi najveći od Kanarskih otoka. Bezbrižnost hodanja u kratkim rukavima cijeli dan bez osjećaja hladnoće. Zadovoljstvo uvijek vidjeti more na horizontu. Osjećaj zabijanja stopala u pijesak. Trenutna svježina Atlantika dok se kupate na plaži. Radost imati sunce kao svog suputnika
+    </div>
+<br>
+<br>
+<br>
+<br><br>
+
+  
+    <div id="container3"> Tenerife također nudi dobro očuvana povijesna središta gradova velike arhitektonske i umjetničke vrijednosti u kojima možete šetati, muzeje i slikovita, tradicionalna sela u kojima se možete družiti i razgovarati s lokalnim stanovništvom. Možda biste se htjeli baviti nekim sportom? Nema problema. Ovdje se možete baviti svim vrstama sportova, a posebno onima vezanim uz more ili golf. Na otoku ima nekoliko mjesta, izbor je velik. A za one željne intenzivnijih emocija, nema ništa bolje od zabave u modernim atrakcijama tematskih parkova, raju za djecu koja će sa sobom ponijeti nezaboravna sjećanja na obiteljski odmor. Ukratko, za svaki dan drugačiji plan. Zbogom, dosado!
+        Kao i drugi Kanarski otoci, Tenerife ima vulkansko podrijetlo. U sredini otoka nalazi se veliki vulkan Teide (3718 m), koji je najviša točka ne samo na Tenerifima nego i u cijeloj Španjolskoj.
+        Kanarski otoci pripadaju Kraljevini Španjolskoj, iako se geografski smatraju dijelom afričkog kontinenta, što Kanarske otoke čini posebnim mjestom. Turisti će pronaći uslugu na europskoj razini, blagu klimu i raznoliku prirodu s egzotičnim biljkama. 
+        
+     <img src="./images/krajolik.jpg" class="image3">
+     </div>
+   
+    <br>
+    <br>
+    <br>
+    
+    
+    
+        <h3>Santa Cruz de Teneriffa</h3> 
+    <br>
+    <br>
+    <br>
+    
+    <div id="container4"> <img src="./images/santacruzdeteneriffa.jpg" class="image4">
+        
+     
+         Glavni grad otoka je kozmopolitski i fascinantan grad. Parkovi kao što je García Sanabria, upečatljive zgrade kao što su Auditorio de Tenerife, Adán Martín ili Tenerife Espacio de las Artes... Privlače poglede posvuda u ovom gradu, a čak i najjednostavnije stvari ovdje izgledaju izvanredno. To također uključuje dan kupovine u užurbanim trgovačkim ulicama i posljednju kavu za opuštanje u jednom od suncem obasjanih uličnih kafića. Santa Cruz je veseo i vedar grad. Njegova najpoznatija svetkovina je nedvojbeno karneval, koji je proglašen svetkovinom međunarodnog turističkog interesa. Njegova prosječna godišnja temperatura od 21,2ºC poziva vas da provedete vrijeme na otvorenom, u avenijama i parkovima. U središtu grada nalaze se brojne vrlo prometne pješačke ulice u kojima je užitak kupovati jer tamo možete pronaći proizvode iz cijeloga svijeta. Najvažnije povijesne građevine stoje ovdje rame uz rame s veličanstvenim građevinama moderne arhitekture
+    </div>
+</div>
+
+
+
+</div>
+
+<footer>
+  
+    
+    <div id="containerf2">
+        <ul>
+            <li id="left">Informacije</li> <br>
+            <li>Teneriffa</li> 
+            <li>Plaže</li>
+            <li>Atrakcije</li>
+        </ul>
+    </div>
+
+    <div id="containerf3">
+        <ul>
+            <li id="right">Kontakt</li> <br>
+            <li>Nepoznata ulica 519B <br>756422 Nepoznat</li>
+            <li>E-mail: teneriffaiskustvo@gmail.com</li>
+            <li>Telefon: 0543227665419</li>
+        </ul>
+    </div>
+
+        <div id="containerf4">	
+            <form>
+            <input type="text" name="Ime" id="Ime" placeholder="Ime">
+            <input type="text" name="email" id="email" placeholder="E-MAIL">
+            <input disabled type="text" name="Predmet" id="Predmet" placeholder="Predmet">
+            <br><input type="Pošalji" name="Pošalji" id="Pošalji" value="Pošalji">
+            </form>
+        </div>
+
+
+
+    
+</footer>
+    
+
+    
+
+</body>
+</html>
